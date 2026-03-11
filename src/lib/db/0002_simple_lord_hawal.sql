@@ -1,0 +1,1 @@
+ALTER TABLE "feeds" ALTER COLUMN "userId" SET DATA TYPE uuid;

@@ -1,0 +1,58 @@
+# Gator
+
+Gator is a command-line RSS feed aggregator built with Node.js. It lets users register and log in, add and follow feeds, fetch new posts on an interval, and browse recent items from followed feeds.
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) `<version>`
+- npm
+- Git
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/tschouten/Gator.git
+cd Gator
+```
+
+2. Install dependencies and build:
+
+```bash
+npm install
+npm run build
+```
+
+3. Run the CLI:
+
+```bash
+npm run start -- register <username>
+```
+
+### Command Reference
+
+```bash
+npm run start -- register <username>
+npm run start -- login <username>
+npm run start -- users
+npm run start -- reset
+npm run start -- addfeed "<feed-name>" <feed-url>
+npm run start -- feeds
+npm run start -- follow <feed-url>
+npm run start -- following
+npm run start -- unfollow <feed-url>
+npm run start -- agg <interval>
+npm run start -- browse <limit>
+```
+
+### Quick Start
+
+```bash
+npm run start -- register <username>
+npm run start -- login <username>
+npm run start -- addfeed "<feed-name>" <feed-url>
+npm run start -- follow <feed-url>
+npm run start -- agg <interval>
+npm run start -- browse <limit>
+```

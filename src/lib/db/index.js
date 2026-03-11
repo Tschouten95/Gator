@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.db = void 0;
+var postgres_js_1 = require("drizzle-orm/postgres-js");
+var postgres_1 = require("postgres");
+var schema = require("./schema");
+var config_1 = require("../../config");
+console.log("db/index.ts is loading...");
+var config = (0, config_1.readConfig)();
+console.log("Connecting to:", config.dbUrl);
+var conn = (0, postgres_1.default)(config.dbUrl, { prepare: false });
+console.log("Connected to database");
+exports.db = (0, postgres_js_1.drizzle)(conn, { schema: schema });
