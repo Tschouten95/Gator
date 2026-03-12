@@ -10,7 +10,7 @@ import { followFeedHandler } from "./commands/followFeedHandler";
 import { followingFeedHandler } from "./commands/followingFeedHandler";
 import { middlewareLoggedIn } from "./middleware/middlewareLoggedIn";
 import { unfollowFeedHandler } from "./commands/unfollowFeedHandler";
-import { browseFeedHandler } from "./commands/broseFeedHandler";
+import { browseFeedHandler } from "./commands/browseFeedHandler";
 
 async function main() {
   const commands: CommandsRegistry = {}
